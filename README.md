@@ -1,6 +1,6 @@
 Akka Web Template
 =================
-This is an sbt-based, scala Akka project that sets up a web project with REST and comet support. It includes a simple hello-world style demo application and an actor boot class. It is inspired by efleming969's [akka-template-rest][]. However, it differs in that it
+This is a sbt-based, scala Akka project that sets up a web project with REST and comet support. It includes a simple hello-world style demo application and an actor boot class. It is inspired by efleming969's [akka-template-rest][]. However, it differs in that it
 
 * uses sbt dependencies instead of setting up maven repositories
 * uses the Akka sbt plugin
