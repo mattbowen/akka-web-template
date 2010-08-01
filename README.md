@@ -24,18 +24,12 @@ Places to make changes
 
 You'll probably want to make changes in the following files:
 
-* project/build.properties
-** This is where you'll set your project name, your name, the scala version, and so forth
-* project/build/AkkaWebTemplate.scala 
-** You probably want to rename this guy, and change the class name to match your project's name
-* src/main/resources/akka.conf
-** This is where all of the Akka-specific settings are. If you change the package names (recommended), you'll need to at least change the boot class name
-* src/main/webapp/WEB-INF/web.xml
-** This is where jetty (or whatever container you're using) gets configured; even money, you'll want to add some other servlets and change the url-pattern mapping for the AkkaServlet
-* src/main/scala/AkkaWebTemplate.scala
-** This is a simple hello-world style example. Expect to replace it entirely.
-* src/main/scala/Boot.scala
-** This is the boot class for Akka; you'll probably want to change the package name, remove my demo actor, and start adding your own
+* project/build.properties (this is where you'll set your project name, your name, the scala version, and so forth)
+* project/build/AkkaWebTemplate.scala (you probably want to rename this guy, and change the class name to match your project's name)
+* src/main/resources/akka.conf (this is where all of the Akka-specific settings are. If you change the package names [recommended], you'll need to at least change the boot class name)
+* src/main/webapp/WEB-INF/web.xml (this is where jetty (or whatever container you're using) gets configured; even money, you'll want to add some other servlets and change the url-pattern mapping for the AkkaServlet)
+* src/main/scala/AkkaWebTemplate.scala (this is a simple hello-world style example. Expect to replace it entirely)
+* src/main/scala/Boot.scala (this is the boot class for Akka; you'll probably want to change the package name, remove my demo actor, and start adding your own)
 
 Notes
 -----
