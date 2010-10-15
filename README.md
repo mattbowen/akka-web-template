@@ -11,7 +11,7 @@ This template is released under Apache 2 License.
 Usage
 -----
 
-1. Make sure you have sbt installed and in your parth. If not, see http://code.google.com/p/simple-build-tool/wiki/Setup
+1. Make sure you have sbt installed and in your path. If not, see http://code.google.com/p/simple-build-tool/wiki/Setup
 2. cd akka-web-template
 3. sbt (which will bring you to an sbt prompt)
 4. update
@@ -38,6 +38,8 @@ Notes
 
 Changelog
 ---------
+2010-10-14
+* Closed #1 and #2 [MattBowen]
 
 2010-07-31
 

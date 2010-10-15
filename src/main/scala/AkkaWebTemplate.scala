@@ -12,8 +12,8 @@ import se.scalablesolutions.akka.actor.ActorRegistry.actorsFor
 
 class SampleActor extends Actor {
   def receive = {
-    case "Test" => reply(<html><head><title>It works!</title></head><body><h1>It works!</h1></body></html>.toString)
-    case _ => reply(<html><head><title>It still works!</title></head><body><h1>I don't know what you just said, but it still works!</h1></body></html>.toString)
+    case "Test" => self.reply(<html><head><title>It works!</title></head><body><h1>It works!</h1></body></html>.toString)
+    case _ => self.reply(<html><head><title>It still works!</title></head><body><h1>I don't know what you just said, but it still works!</h1></body></html>.toString)
   }
 }
 
