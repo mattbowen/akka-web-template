@@ -39,6 +39,7 @@ Notes
 Changelog
 ---------
 2010-10-14
+
 * Closed #1 and #2 [MattBowen]
 
 2010-07-31
