@@ -6,17 +6,17 @@
 <web-app>
 
   <listener>
-    <listener-class>se.scalablesolutions.akka.servlet.Initializer</listener-class>
+    <listener-class>akka.servlet.Initializer</listener-class>
   </listener>
 
   <servlet>
     <servlet-name>AkkaServlet</servlet-name>
-    <servlet-class>se.scalablesolutions.akka.comet.AkkaServlet</servlet-class>
-    </servlet>
+    <servlet-class>akka.http.AkkaRestServlet</servlet-class>
+  </servlet>
 
   <servlet-mapping>
     <servlet-name>AkkaServlet</servlet-name>
     <url-pattern>/*</url-pattern>
-    </servlet-mapping>
+  </servlet-mapping>
 
 </web-app>

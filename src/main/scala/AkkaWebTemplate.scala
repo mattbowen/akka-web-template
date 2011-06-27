@@ -5,10 +5,9 @@
 
 package akkawebtemplate
 
-import se.scalablesolutions.akka.actor.Actor
+import akka.actor.Actor
 import javax.ws.rs.{GET, Path, Produces}
-import se.scalablesolutions.akka.actor.ActorRegistry.actorsFor
-
+import akka.actor.Actor.registry._
 
 class SampleActor extends Actor {
   def receive = {
