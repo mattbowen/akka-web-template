@@ -6,5 +6,7 @@ class AkkaWebTemplate(info: ProjectInfo) extends DefaultWebProject(info) with Ak
   //Adding dependencies in sbt is as simple as declaring a variable
   //For the Akka deps, we even have a method for pulling them in by a simple name
   val akkaHttp = akkaModule("http")
-  val jetty6 = "org.mortbay.jetty" % "jetty" % "6.1.14" % "test"
+  val akkaKernel = akkaModule("kernel")
+  val jettyWebapp = "org.eclipse.jetty" % "jetty-webapp" % "8.0.0.M2" % "test"
+  val javaxServlet30 = "org.mortbay.jetty" % "servlet-api" % "3.0.20100224" % "provided"
 }

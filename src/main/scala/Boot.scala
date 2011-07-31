@@ -5,17 +5,17 @@
 
 package akkawebtemplate
 
-import se.scalablesolutions.akka.actor.SupervisorFactory
-import se.scalablesolutions.akka.config.ScalaConfig._
-import se.scalablesolutions.akka.actor.Actor._
+import akka.actor.SupervisorFactory
+import akka.config.Supervision._
+import akka.actor.Actor._
 
 class Boot {
   val factory = SupervisorFactory(
     SupervisorConfig(
-      RestartStrategy(OneForOne, 3, 100, List(classOf[Exception])),
+      OneForOneStrategy(List(classOf[Exception]), 3, 100),
       Supervise(
 	actorOf[SampleActor], 
-	LifeCycle(Permanent)) 
+	Permanent) 
       :: Nil))
     factory.newInstance.start
 }
