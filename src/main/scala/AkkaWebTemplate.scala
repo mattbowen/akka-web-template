@@ -22,6 +22,6 @@ class SampleService {
   @Produces(Array("text/html"))
   def test = {
     val testActor = actorsFor(classOf[SampleActor]).headOption.get
-    (testActor !! "Test").getOrElse("Couldn't get test data")
+    (testActor ? "Test").as[String].getOrElse("Couldn't get test data")
   }
 }
