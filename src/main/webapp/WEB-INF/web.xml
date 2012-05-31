@@ -4,7 +4,7 @@
 	  "http://java.sun.com/dtd/web-app_2_4.dtd">
  
 <web-app>
-
+<!--
   <listener>
     <listener-class>akka.servlet.Initializer</listener-class>
   </listener>
@@ -18,5 +18,22 @@
     <servlet-name>AkkaServlet</servlet-name>
     <url-pattern>/*</url-pattern>
   </servlet-mapping>
+-->
+  <servlet>
+    <servlet-name>Jersey REST Service</servlet-name>
+    <servlet-class>
+      com.sun.jersey.spi.container.servlet.ServletContainer
+    </servlet-class>
+    <init-param>
+      <param-name>com.sun.jersey.config.property.packages</param-name>
+      <param-value>akkawebtemplate</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Jersey REST Service</servlet-name>
+    <url-pattern>/*</url-pattern>
+  </servlet-mapping> 
 
 </web-app>
