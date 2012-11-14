@@ -4,21 +4,7 @@
 	  "http://java.sun.com/dtd/web-app_2_4.dtd">
  
 <web-app>
-<!--
-  <listener>
-    <listener-class>akka.servlet.Initializer</listener-class>
-  </listener>
 
-  <servlet>
-    <servlet-name>AkkaServlet</servlet-name>
-    <servlet-class>akka.http.AkkaRestServlet</servlet-class>
-  </servlet>
-
-  <servlet-mapping>
-    <servlet-name>AkkaServlet</servlet-name>
-    <url-pattern>/*</url-pattern>
-  </servlet-mapping>
--->
   <servlet>
     <servlet-name>Jersey REST Service</servlet-name>
     <servlet-class>
